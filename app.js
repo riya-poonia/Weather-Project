@@ -26,11 +26,11 @@ app.post("/", function (req, res) {
     response.on("data", function (data) {
       const weatherData = JSON.parse(data);
       //console.log(weatherData);
-      const obj = {
-        name: "Riya",
-        age: 21,
-        height: 170,
-      };
+      // const obj = {
+      //   name: "Riya",
+      //   age: 21,
+      //   height: 170,
+      // };
       //console.log(JSON.stringify(obj));
       const temp = weatherData.main.temp;
       const weather = weatherData.weather[0].description;
